@@ -13,7 +13,12 @@ section {
 
 h1 {
     text-align: center;
-    color: rgb(20, 125, 165)
+    color: rgb(20, 125, 165);
+    font-size: 45px;
+}
+
+h2 {
+    font-weight: normal;
 }
 
 .intro {
@@ -113,15 +118,36 @@ a {
     margin: 0;
 }
 
+section li {
+    list-style-type: "» ";
+}
+
 /* Styling the connect section */
-#Connect {
+#Connect ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 24px 40px;
 
     list-style: none;
     padding-left: 0;
     background-color: #333;
+}
+
+#Connect li:nth-child(1)::marker { /* Recall: CSS is 1-indexed */
+    content: "📨 "
+}
+
+#Connect li:nth-child(2)::marker {
+    content: "💼 "
+}
+
+#Connect li:nth-child(3)::marker {
+    content: "🐙 "
+}
+
+#Connect li:nth-child(4)::marker {
+    content: "📃 "
 }
