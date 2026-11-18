@@ -28,7 +28,6 @@ h2 {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
-    /* padding: 0 20px; */
 }
 
 .intro img {
@@ -41,28 +40,6 @@ h2 {
 .intro h2 {
     margin-top: 0;
 }
-
-/* .details-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-}
-
-/* Styles all the individual sections */
-/* .details-grid > section {
-    margin: 0;
-    min-width: 0;
-    padding: 24px;
-    border: 2px solid rgb(20, 125, 165);
-    border-radius: 8px;
-}
-
-.details-grid h2 {
-    margin-top: 0;
-} */
 
 .education-heading {
     display: flex;
@@ -101,11 +78,6 @@ a {
     list-style: none; 
 }
 
-/* Removes underlining from the links in the navbar
-.nav-links a {
-    text-decoration: none;
-} */
-
 .job-header {
     display: flex;
     justify-content: space-between;
@@ -116,6 +88,17 @@ a {
 
 .job-header h3 {
     margin: 0;
+}
+
+.job {
+    border: 1px double rgb(20, 125, 165);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#Experience li{
+    list-style-type: circle;
 }
 
 section li {
