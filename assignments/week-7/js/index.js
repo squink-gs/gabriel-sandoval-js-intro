@@ -1,14 +1,17 @@
-// 1. Inserting copyright text in the footer:
+// 1. Creatign a footer
+const footer = document.createElement("footer");
+
+// 2. Inserting copyright text in the footer:
 const today = new Date();
 
 const thisYear = today.getFullYear();
-const footer = document.querySelector('footer')
 const copyright = document.createElement("p")
 
-copyright.innerHTML = `© Gabriel Sandoval ${thisYear}`;
+copyright.innerText = `© Gabriel Sandoval ${thisYear}`;
 footer.appendChild(copyright);
+document.body.appendChild(footer);
 
-// 2. Creating a list of skills:
+// 3. Creating a list of skills:
 const skills = ([
     "Python", 
     "SQL",
